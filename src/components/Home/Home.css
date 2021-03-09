@@ -1,0 +1,14 @@
+.banner{
+    background-image: url("../../images/IMP-banner.jpg");
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.leagues{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border:1px solid red;
+}
