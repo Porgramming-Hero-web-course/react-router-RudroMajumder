@@ -1,0 +1,48 @@
+/* *{
+    background-color: #1F2833;
+} */
+.league-banner{
+    background-image: url("../../images/banner.jpeg");
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-image{
+    width:10%
+}
+.league-info{
+    padding-top:40px;
+    background-color: #1F2833;
+    height: 100%;
+}
+.info{
+    background-color: #1eadf5 !important;
+    border-radius: 10px;
+    height: 100%;
+}
+.info-div{
+    height:120px;
+}
+.info-image{
+    width:350px;
+    height: 220px;
+    padding:0;
+}
+.description{
+    color:white;
+}
+@media screen and (max-width:720px){
+    .banner-image{
+        width:30%
+    }
+}
+@media screen and (max-width:500px){
+    .banner-image{
+        width:30%
+    }
+    .info{
+        width:100%
+    }
+}

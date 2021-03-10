@@ -1,3 +1,4 @@
+import { hot } from 'react-hot-loader/root';
 import React, { useEffect, useState } from 'react';
 import './LeagueDisplay.css';  
 import { makeStyles } from '@material-ui/core/styles';
@@ -9,7 +10,9 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { Grid } from '@material-ui/core';
-import { sizing } from '@material-ui/system';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHandPointRight } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles({
   Card: {
@@ -51,11 +54,12 @@ const LeagueDisplay = (props) => {
                 </Typography>
               </CardContent>
             </CardActionArea>
-            <CardActions>
-              <Button variant="contained" color="primary" >
-                Explore
-              </Button>
-              
+            <CardActions display='flex' justifyContent='center'>
+              <Link to={"/leagueId/"+id}> 
+                <Button variant="contained" color="primary" style={{margin: '0 auto'}}>
+                Explore <FontAwesomeIcon icon={faHandPointRight} />
+                </Button>
+              </Link>
             </CardActions>
           </Card>
         </Grid>
@@ -64,4 +68,4 @@ const LeagueDisplay = (props) => {
     );
 };
 
-export default LeagueDisplay;
+export default hot(LeagueDisplay);
