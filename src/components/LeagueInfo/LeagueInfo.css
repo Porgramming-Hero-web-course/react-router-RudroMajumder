@@ -38,11 +38,11 @@
         width:30%
     }
 }
-@media screen and (max-width:500px){
+@media screen and (max-width:575px){
     .banner-image{
-        width:30%
+        width:30%;
     }
-    .info{
-        width:100%
+    .info-image{
+        width:100%;
     }
 }
