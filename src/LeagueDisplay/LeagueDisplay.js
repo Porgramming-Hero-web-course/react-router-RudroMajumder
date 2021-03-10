@@ -35,7 +35,7 @@ const LeagueDisplay = (props) => {
     return (
         <Grid container  spacing={5} direction="column" alignItems="center"
         justify="center" >
-          <Grid item sx={3}>
+          <Grid item >
           <Card className={classes.root} justifyContent="center">
             <CardActionArea>
               <CardMedia
@@ -52,7 +52,7 @@ const LeagueDisplay = (props) => {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button size="small" color="primary">
+              <Button variant="contained" color="primary" >
                 Explore
               </Button>
               
