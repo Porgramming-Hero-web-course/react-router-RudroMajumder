@@ -31,7 +31,7 @@ const LeagueInfo = () => {
     console.log(strTwitter,strFacebook,strYoutube)
 
     let conditionalImage;
-    
+
     strGender==="Male"? conditionalImage=maleImg : conditionalImage=femaleImg;
 
     return (
@@ -43,7 +43,7 @@ const LeagueInfo = () => {
                 <div >
                     <div className="container info ">
                         <div className="row ">
-                            <div className="col-lg-7 col-sm-12 pt-5 d-flex flex-sm-row flex-lg-column">
+                            <div className="col-lg-7 col-sm-12 col-xs-12 pt-5 d-flex flex-sm-row flex-lg-column">
                                 <div>
                                     <h1> {strLeague} </h1>
                                     <h4> <FontAwesomeIcon icon={faMapPin} /> Founded: {dateFirstEvent} </h4>
@@ -52,7 +52,7 @@ const LeagueInfo = () => {
                                     <h4> <FontAwesomeIcon icon={faMars} /> Gender: {strGender} </h4>
                                 </div>
                             </div>
-                            <div className="col-lg-5 col-sm-12 pt-3 pb-3 pe-5 d-flex flex-sm-row flex-lg-column">
+                            <div className="col-lg-5 col-sm-12 col-xs-12 pt-3 pb-3 pe-5 d-flex flex-sm-row flex-lg-column">
                                 
                                     <img src={conditionalImage} className="rounded mx-auto d-block info-image" alt=""/>
                                 
