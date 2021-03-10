@@ -8,7 +8,7 @@ const Home = () => {
 
     const [leagues,setLeagues] = useState([]);
     // console.log(leagues)
-    const newLeagues = leagues.slice(0,20);
+    const newLeagues = leagues.slice(0,21);
     // console.log(newLeagues)
     useEffect(()=>{
         fetch('https://www.thesportsdb.com/api/v1/json/1/all_leagues.php')

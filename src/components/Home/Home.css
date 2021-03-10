@@ -1,6 +1,6 @@
 .banner{
     background-image: url("../../images/banner.jpeg");
-    height: 300px;
+    height: 500px;
     background-size: cover;
     display: flex;
     justify-content: center;

@@ -32,7 +32,7 @@ const LeagueInfo = () => {
 
     let conditionalImage;
 
-    strGender==="Male"? conditionalImage=maleImg : conditionalImage=femaleImg;
+    strGender && strGender==="Female"? conditionalImage=femaleImg : conditionalImage=maleImg;
 
     return (
         <div className="all-info ">

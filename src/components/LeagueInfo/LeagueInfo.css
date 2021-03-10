@@ -3,7 +3,7 @@
 } */
 .league-banner{
     background-image: url("../../images/banner.jpeg");
-    height: 400px;
+    height: 500px;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -18,7 +18,7 @@
     height: 100%;
 }
 .info{
-    background-color: #1eadf5 !important;
+    background-color: #1fadf4 ;
     border-radius: 10px;
     height: 100%;
 }

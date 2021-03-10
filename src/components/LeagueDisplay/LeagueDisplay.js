@@ -36,34 +36,36 @@ const LeagueDisplay = (props) => {
     const classes = useStyles();
 
     return (
-        <Grid container  spacing={5} direction="column" alignItems="center"
-        justify="center" >
-          <Grid item >
-          <Card className={classes.root} justifyContent="center">
-            <CardActionArea>
-              <CardMedia
-                className={classes.media}
-                image={strBadge} 
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="h2">
-                  {strLeague}
-                </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  {strSport}
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions display='flex' justifyContent='center'>
-              <Link to={"/leagueId/"+id}> 
-                <Button variant="contained" color="primary" style={{margin: '0 auto'}}>
-                Explore <FontAwesomeIcon icon={faHandPointRight} />
-                </Button>
-              </Link>
-            </CardActions>
-          </Card>
-        </Grid>
-        </Grid>
+        <div>
+            <Grid container  spacing={2} direction="column" alignItems="center"
+          justify="center" >
+            <Grid item >
+            <Card className={classes.root} justifyContent="center">
+              <CardActionArea>
+                <CardMedia
+                  className={classes.media}
+                  image={strBadge} 
+                />
+                <CardContent className="grid" mt={2}>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    {strLeague}
+                  </Typography>
+                  <Typography variant="body2" color="textSecondary" component="p">
+                    {strSport}
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+              <CardActions display='flex' justifyContent='center'>
+                <Link to={"/leagueId/"+id}> 
+                  <Button  variant="contained" color="primary" >
+                  Explore <FontAwesomeIcon icon={faHandPointRight} />
+                  </Button>
+                </Link>
+              </CardActions>
+            </Card>
+          </Grid>
+          </Grid>
+        </div>
         
     );
 };
